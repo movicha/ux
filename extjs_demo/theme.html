@@ -1,0 +1,105 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ext.js Theming</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/ge.css" />
+
+    <script type="text/javascript" src="extjs/ext-all-dev.js"></script>
+
+    <script type="text/javascript" src="theme.js"></script>
+    
+    <style type="text/css" media="screen">
+      body {
+        background-color: white;
+      }
+      #header {
+        background-color: black;
+        color: white;
+        padding: 10px;
+      }
+      #topnav {
+        background-color: black;
+        color: white;
+        padding: 10px;
+      }
+
+      #topnav ul {
+        display: inline;
+        margin: 10px;
+      }
+      #topnav ul li {
+        display: inline;
+        padding: 3px 10px;
+        border-radius: 3px;
+      }
+      #topnav ul li.selected {
+        background-color: #20BAFF;
+        color: white;
+      }
+
+
+      #subnav {
+        height: 58px;
+        background-color: #E4E4E4;
+        padding: 22px;
+      }
+      #subnav span.name {
+        font-size: 14px;
+        font-weight: bold;
+      }
+      #subnav ul {
+        display: inline;
+        margin: 10px;
+      }
+      #subnav ul li {
+        display: inline;
+        background-color: white;
+        padding: 3px 10px;
+      }
+      #subnav ul li:first-child {
+        border-radius: 3px 0 0 3px;
+      }
+      #subnav ul li:last-child {
+        border-radius: 0 3px 3px 0;
+      }
+      #subnav ul li.selected {
+        background-color: #20BAFF;
+        color: white;
+      }
+    </style>
+</head>
+<body class="x-body">
+    <div id="header">
+      <h1>GE Expert on Alert</h1>
+    </div>
+    
+    <div id="topnav">
+      <ul>
+        <li>Cases</li>
+        <li>RXs</li>
+        <li>Shops</li>
+      
+        <li class="selected">Asset 2889</li>
+        <li>Asset 3947</li>
+      
+        <li>More</li>
+      </ul>
+    </div>
+    
+    <div id="subnav">
+      <span class="name">Asset 2889</span>
+      
+      <ul>
+        <li>Overview</li>
+        <li>Cases</li>
+        <li>History</li>
+        <li class="selected">Data</li>
+      </ul>
+    </div>
+    
+    <div id="content">
+    </div>
+</body>
+</html>
